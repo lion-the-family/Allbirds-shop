@@ -1,0 +1,69 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    box-sizing: border-box;
+
+}
+
+// Переменние
+:root {
+    --black: #212A2F;
+    --white: #FFFFFF;   
+    --gray:#D3D4D5;
+    
+    %name-btn {
+        width: 180px;
+        height: 48px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    %name-header-text {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 42px;
+        color: var(--black);
+        letter-spacing: 0.5px;
+    }
+    %text-right-left {
+        color: var(--black);
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 21px;
+            text-align: center;
+            letter-spacing: 1.7px;
+            text-transform: uppercase;
+            margin-right: 27px;
+            margin-left: 36px;
+            cursor: pointer;
+            transition: 0.6s;
+            margin-left: 21px;
+            list-style: none;
+    }
+    %name-h3 {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 29px;
+        letter-spacing: 0.5px;
+    }
+    %text-paragraph {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            margin-top: -21px;
+    }
+    %text-paragraph400 {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+    }
+
+}

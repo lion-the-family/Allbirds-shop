@@ -1,0 +1,501 @@
+@import './root.scss';
+
+
+
+
+// Header
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    min-width: 1440px;
+
+    .header-text__left {
+        width: 620px;
+        display: flex;
+        margin-left: -30px;
+
+        .text-left {
+            @extend %text-right-left;
+            &:hover {
+                color: rgb(213, 209, 209);
+            }
+        }
+    }
+
+    .logo {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .header-text-icon__right {
+        width: 620px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        .text-right {
+            @extend %text-right-left;
+
+            &:hover {
+                color: rgb(213, 209, 209);
+            }
+        }
+
+        .icon {
+            width: 25px;
+            height: 20px;
+            margin-right: 34px;
+            margin-left: -16px;
+            cursor: pointer;            
+        }
+    }
+}
+
+// Content
+
+.content {
+    background-image: url(../img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1440px;
+    height: 740px;
+    margin-top: 10px;
+
+    .content-text {
+        width: 668px;
+        height: 170px;
+        padding-top: 450px;
+        padding-left: 54px;
+        h1 {
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 63px;
+            color: var(--white); 
+        }
+        p{
+           @extend %text-paragraph;
+            color: var(--white);
+        }
+    }
+    .btn {
+        width: 384px;
+        height: 48px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+
+        .btnshop {
+           @extend %name-btn;
+            background-color: var(--white);
+            border: 1px solid var(--white);
+            transition: 0.6s;
+            &:hover {
+                background: rgb(213, 209, 209);
+                border: 1px solid rgb(213, 209, 209);
+            }
+        }
+    }
+}
+// Content 2 
+
+.header-text{
+    width: 210px;
+    height: 42px;
+    margin-left: 615px;
+    margin-right: 615px;
+    h1{
+       @extend %name-header-text;
+        margin-top: 120px;
+    }
+    
+}
+.title-text{
+    width: 1236px;
+    height: 68px;
+    margin-left: 102px;
+    margin-right: 102px;
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+    h3{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: var(--black);
+        margin-left: 100px;
+        margin-right: 100px;
+        cursor: pointer;
+        transition: 0.6s;
+            &:hover {
+                color: rgb(213, 209, 209);
+            }
+       
+        
+    }
+}
+.span {
+    height: 2px;
+    width: 1236px;
+    background: var(--gray);
+    margin-left: 102px;
+    margin-right: 102px;
+    
+}
+.container {
+    width: 1236px;
+    height: 513px;
+    margin-left: 102px;
+    margin-right: 102px;
+    margin-top: 36px;
+    display: flex;
+    justify-content: space-between;
+    .container-control{
+        width: 396px;
+        height: 513px;
+    }
+    .img-nike {
+        background: url(../img/Frame.png);
+        width: 396px;
+        height: 396px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .btn-nike {
+            width: 275px;
+            height: 107px;
+            
+            .btn-shop-nike {
+                width: 276px;
+                height: 48px;
+                margin-top: 12px;
+                border: 1px solid var(--white);
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 16px;
+                text-align: center;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                color: var(--black);
+                transition: 0.6s;
+            &:hover {
+                background: rgb(213, 209, 209);
+                border: 1px solid rgb(213, 209, 209);
+            }
+            }
+        }
+    }
+    .title-icon {
+        width: 336px;
+        height: 81px;
+        margin-left: 30px;
+        h1 {
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 29px;
+            color: var(--black);
+            letter-spacing: 0.5px;
+        }
+        .span-gray {
+            width: 336px;
+            height: 1px;
+            background: var(--gray);
+        }
+    }
+    .icon-and-text{
+        display: flex;
+        align-items: center;
+        img {
+            width: 30px;
+            height: 30px;
+        }
+        p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: var(--black);
+            letter-spacing: 0.4px;
+            margin-left: 12px;
+        }
+    }
+    .nike-cange {
+        background: url(../img/123.png  );
+        width: 396px;
+        height: 396px;
+    }
+    .nike-cange1 {
+        background: url(../img/1231241123213.jpeg);
+        width: 396px;
+        height: 396px;
+    }
+}
+
+// Coneten3 
+
+.wrapper-content {
+    width: 1440px;
+    height: 912px;
+    margin-top: 145px;
+    .text-and-btn {
+        display: flex;
+        justify-content: center;
+        
+        
+        .wrapper {
+            width: 666px;
+            height: 202px;
+            margin-top: 52px;
+        
+            h1 {
+                @extend  %name-header-text;
+                color: var(--black);
+                margin-top: 20px;
+                padding-bottom: 20px
+            }
+            p {
+                @extend %text-paragraph;
+                text-align: center;
+                color: var(--black);
+                
+            }
+            .wrapbtn {
+                display: flex;
+                justify-content: center;
+                margin-top: 30px;
+            }
+            .wrap-btn {
+                @extend %name-btn;
+                color: var(--white);
+                background-color: var(--black);
+                border: 1px solid var(--black);
+                margin-left: 12px;
+                margin-right: 12px;
+                transition: 0.7s;
+                &:hover {
+                    background-color: #304e5f;
+                    border: 1px solid #304e5f;
+                }
+              
+            }
+        }
+    }
+}
+
+// Content4
+
+.img-gallery {
+    width: 1440px;
+    height: 724px;
+    h1 {
+        @extend %name-header-text;
+        color: var(--black);
+        margin-left: 102px;
+    }
+    .gallery-text-img {
+        width: 1380px;
+        height: 539px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .gallery {
+            width: 396px;
+            height: 539px;
+            margin-left: 12px;
+            margin-right: 12px;
+            overflow: hidden;
+            img {
+                width: 396px;
+                height: 396px;
+                border-radius: 5px;
+                transition: 1s;  
+                cursor: pointer;
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
+            h3 {
+                @extend %name-h3;
+                color: var(--black);
+                margin-left: 12px;
+            }
+            p {
+                @extend  %text-paragraph400;
+                color: var(--black);
+                margin-left: 12px;
+            }
+        }
+    }
+    .scale {
+        display: inline-block; /* Строчно-блочный элемент */
+        overflow: hidden; /* Скрываем всё за контуром */
+       }
+       .scale img {
+        transition: 1s; /* Время эффекта */
+        display: block; /* Убираем небольшой отступ снизу */
+       }
+       .scale img:hover {
+        transform: scale(1.2); /* Увеличиваем масштаб */
+       }
+}
+
+// Content5
+
+.tree-img {
+    width: 1440px;
+    height: 650px;
+    img {
+        width: 1440px;
+        height: 542px;
+    }
+}
+// Conten6
+.shoes1{
+    background-color: #F5F5F5;
+}
+
+// Content7
+
+.container-input-and-text {
+   width: 1440px;
+   height: 355px;
+
+   
+   .block-input-and-text {
+       width: 855px;
+       height: 149px;
+       margin: 0 auto;
+       text-align: center;
+
+        h3 {
+            @extend %name-header-text;
+            color: var(--black);
+        }
+        p {
+            @extend %text-paragraph400;
+            color: var(--black);
+        }
+   }
+   .iput-and-button {
+       width: 855px;
+       height: 48px;
+       margin: 0 auto;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin-top: 45px;
+       input {
+           width: 588px;
+           height: 48px;
+           border-top: none;
+           border-right: none;
+           border-left: none;
+           padding-left: 100px;
+           outline: none;
+           font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 14px;
+       }
+       button {
+           width: 111px;
+           height: 48px;
+           margin-left: 12px;
+           font-weight: 700;
+            font-size: 14px;
+            line-height: 16px;
+            text-align: center;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--white);
+            background:var(--black);
+            border: 1px solid var(--black);
+            transition: 0.6s;
+            &:hover{
+                background: #3d5460;;
+            }
+       }
+   }
+   .bottom-text {
+        text-align: center;
+        margin-top: 24px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px;
+        color: #74797C;
+   }
+}
+
+// Footer
+
+.footer {
+    width: 1440px;
+    height: 820px;
+    background: var(--black);
+
+    .help-shoop-company{
+        display: flex;
+
+    .help-shoop-company-content {
+        width: 333px;
+        height: 347px;
+        margin-top: 72px;
+        margin-left: 54px;
+
+        h3 {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--white);
+        }
+        p {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 12px;
+            color: var(--white);
+            letter-spacing: 0.5px;
+        }
+    }
+    }
+    .follow-footer {
+        width: 333px;
+        height: 130px;
+        margin-top: 114px;
+        margin-left: 54px;
+
+        h3 {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--white);
+        }
+        p {
+            width: 293px;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 20px;
+            color: var(--white);
+            letter-spacing: 0.5px; 
+        }
+    }
+    .finish-footer-text {
+        text-align: center;
+        margin-top: 90px;
+        p {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 20px;
+            color: var(--white);
+            letter-spacing: 0.5px; 
+        }
+    }
+
+}
